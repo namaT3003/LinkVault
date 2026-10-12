@@ -1,0 +1,149 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    font-family: "Segoe UI", sans-serif;
+    background:#faf8f6;
+    color:#2f2b35;
+}
+
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+    padding:50px 0;
+}
+
+header{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+header h1{
+    color:#7863b3;
+    font-size:64px;
+    margin-bottom:10px;
+    font-weight:700;
+}
+
+header p{
+    color:#7d7472;
+    font-size:22px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:30px;
+    margin-bottom:40px;
+}
+
+.card{
+    background:white;
+    border:1px solid #ece3db;
+    border-radius:20px;
+    padding:35px;
+    box-shadow:0 10px 30px rgba(0,0,0,.04);
+}
+
+.card h2{
+    margin-top:0;
+    margin-bottom:25px;
+    font-size:34px;
+}
+
+input{
+    width:100%;
+    padding:16px 18px;
+    margin-bottom:18px;
+    border:none;
+    border-radius:12px;
+    background:#f3eeea;
+    font-size:17px;
+    box-sizing:border-box;
+}
+
+input:focus{
+    outline:none;
+    background:white;
+    border:2px solid #8d74cb;
+}
+
+button{
+    background:#7863b3;
+    color:white;
+    border:none;
+    padding:14px 28px;
+    border-radius:12px;
+    font-size:16px;
+    cursor:pointer;
+    transition:.25s;
+}
+
+button:hover{
+    background:#65509d;
+    transform:translateY(-2px);
+}
+
+.button-group{
+    display:flex;
+    gap:15px;
+    margin:20px 0;
+}
+
+.stats-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.stat-card{
+    background:#F5EFEB;
+    padding:20px;
+    border-radius:12px;
+    text-align:center;
+}
+
+.stat-card h3{
+    font-size:15px;
+    color:#6D6662;
+}
+
+.stat-card p{
+    margin-top:10px;
+    font-size:26px;
+    font-weight:700;
+}
+
+#qrImage{
+    margin-top:20px;
+    width:180px;
+}
+
+.hidden{
+    display:none;
+}
+
+#searchResults{
+    margin-top:25px;
+}
+
+.result{
+    margin-top:35px;
+    display:none;
+}
+@media(max-width:900px){
+
+.grid{
+grid-template-columns:1fr;
+}
+
+header h1{
+font-size:48px;
+}
+
+}

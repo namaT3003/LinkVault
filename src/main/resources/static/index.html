@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkVault</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+
+    <header>
+        <h1>LinkVault</h1>
+        <p>Organize, shorten and share your links beautifully.</p>
+    </header>
+
+    <!-- Create Short Link -->
+
+    <section class="card">
+
+        <h2>Create Short Link</h2>
+
+        <input
+                type="text"
+                id="originalUrl"
+                placeholder="Paste your URL">
+
+        <input
+                type="text"
+                id="customAlias"
+                placeholder="Custom Alias (optional)">
+
+        <input
+                type="text"
+                id="category"
+                placeholder="Category">
+
+        <button onclick="createLink()">
+            Create Link
+        </button>
+
+    </section>
+
+
+    <!-- Generated Link -->
+
+    <section class="card">
+
+        <h2>Your Link</h2>
+
+        <div id="resultSection">
+
+            Your shortened link will appear here.
+
+        </div>
+
+    </section>
+
+
+    <!-- QR Code -->
+
+    <section class="card">
+
+        <h2>QR Code</h2>
+
+        <img
+                id="qrImage"
+                alt="QR Code">
+
+    </section>
+
+
+    <!-- Statistics -->
+
+    <section class="card">
+
+    <h2>Statistics</h2>
+
+    <div id="stats">
+
+        Statistics will appear here.
+
+    </div>
+
+    <br>
+
+    <button onclick="loadStatistics()">
+
+        Refresh Statistics
+
+    </button>
+
+</section>
+
+
+    <!-- Search -->
+
+    <section class="card">
+
+        <h2>Search by Category</h2>
+
+        <input
+                type="text"
+                id="searchCategory"
+                placeholder="Example: Search">
+
+        <button onclick="searchCategory()">
+
+            Search
+
+        </button>
+
+        <div id="searchResults"></div>
+
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
